@@ -30,7 +30,7 @@ class DownloadProblem {
             zip.file("ProjectParameters.json", new Blob([str]));
 
             Object.entries(problem_files["materials"]).forEach(([key, value]) => {
-                zip.file(value["name"]+".json", new Blob([JSON.stringify(value["data"])]));
+                zip.file(value["name"], new Blob([JSON.stringify(value["data"])]));
             });
 
             // var img = zip.folder("images");

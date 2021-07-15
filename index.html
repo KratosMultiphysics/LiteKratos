@@ -49,12 +49,17 @@
     <script type="text/javascript" src="js/nodes/output_view.js"></script>
     <script type="text/javascript" src="js/nodes/project_parameters.js"></script>
     <script type="text/javascript" src="js/nodes/problem_data.js"></script>
+    <script type="text/javascript" src="js/nodes/structural_project_parameters.js"></script>
 
     <!-- Postprocess -->
     <script type="text/javascript" src="js/nodes/output_processes/gid_output.js"></script>
+    <script type="text/javascript" src="js/nodes/output_processes/gid_output_structural.js"></script>
+    <script type="text/javascript" src="js/nodes/output_processes/vtk_output_structural.js"></script>
 
     <!-- Solver settings for solvers  -->
     <script type="text/javascript" src="js/nodes/solver_settings/fluid_monolithic_solver.js"></script>
+    <script type="text/javascript" src="js/nodes/solver_settings/structural_mechanics_solver.js"></script>
+
 
     <!-- Auxiliary nodes required by solver settings -->
     <!-- Other nodes -->
@@ -66,6 +71,7 @@
     <!-- Materials -->
     <script type="text/javascript" src="js/nodes/materials/materials_list.js"></script>
     <script type="text/javascript" src="js/nodes/materials/material_newtonian.js"></script>
+    <script type="text/javascript" src="js/nodes/materials/structural_material.js"></script>
     <script type="text/javascript" src="js/nodes/materials/material_writer.js"></script>
 
     <!-- Processes nodes -->
@@ -74,6 +80,14 @@
     <script type="text/javascript" src="js/nodes/processes/inlet_by_function.js"></script>
     <script type="text/javascript" src="js/nodes/processes/outlet_process.js"></script>
     <script type="text/javascript" src="js/nodes/processes/no_slip_process.js"></script>
+    <script type="text/javascript" src="js/nodes/processes/constraints_process_list.js"></script>
+    <script type="text/javascript" src="js/nodes/processes/load_process_list_pressure.js"></script>
+    <script type="text/javascript" src="js/nodes/processes/boolean_list.js"></script>
+    <script type="text/javascript" src="js/nodes/processes/vector.js"></script>
+    <script type="text/javascript" src="js/nodes/processes/interval.js"></script>
+
+    <!-- Input -->
+    <script type="text/javascript" src="js/nodes/input/interval.js"></script>
 
     <script type="text/javascript" src="js/demos.js"></script>
     <script type="text/javascript" src="js/code.js"></script>
